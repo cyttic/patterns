@@ -4,6 +4,9 @@ public class BuilderPatternDemo {
     public static void main(String[] args) {
         ProxyMealBuilder mealBuilder = new ProxyMealBuilder();
 
+        int[]arr = new int[7];
+        int h =  arr.length;
+
         Meal vegMeal = mealBuilder.prepareVegMeal();
         System.out.println("Veg Meal:");
         vegMeal.showItems();
